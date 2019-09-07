@@ -2,7 +2,7 @@
 =====================================
 
 A [Passport](http://passportjs.org/) strategy for authenticating with
-[Deviantart](https://www.deviantart.com/) using the OAuth 2.0 and the Deviantart API.
+[Deviantart](https://www.deviantart.com/) using OAuth 2.0 and the Deviantart API.
 
 This module lets you authenticate using Deviantart in your Node.js applications.
 By plugging into Passport, Deviantart authentication can be easily and
