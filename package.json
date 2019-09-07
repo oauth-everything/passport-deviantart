@@ -10,6 +10,10 @@
         "clean": "rimraf dist",
         "build-full": "npm run clean && npm run lint && npm run build"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/oauth-everything/passport-deviantart.git"
+    },
     "keywords": [
         "oauth",
         "deviantart",
@@ -17,6 +21,10 @@
     ],
     "author": "Tyler Schrock <tschrock123@gmail.com>",
     "license": "MPL-2.0",
+    "bugs": {
+        "url": "https://github.com/oauth-everything/passport-deviantart/issues"
+    },
+    "homepage": "https://github.com/oauth-everything/passport-deviantart",
     "devDependencies": {
         "@oauth-everything/oauth2-types": "^1.0.0",
         "@oauth-everything/profile": "^1.0.0",
