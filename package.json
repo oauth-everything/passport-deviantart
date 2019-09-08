@@ -1,6 +1,6 @@
 {
     "name": "@oauth-everything/passport-deviantart",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Deviantart OAuth 2.0 strategy for Passport.js",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -26,10 +26,6 @@
     },
     "homepage": "https://github.com/oauth-everything/passport-deviantart",
     "devDependencies": {
-        "@oauth-everything/oauth2-types": "^1.0.0",
-        "@oauth-everything/profile": "^1.0.0",
-        "@types/passport": "^1.0.1",
-        "@types/passport-oauth2": "^1.4.8",
         "@typescript-eslint/eslint-plugin": "^2.1.0",
         "@typescript-eslint/parser": "^2.1.0",
         "eslint": "^6.3.0",
@@ -37,6 +33,9 @@
         "typescript": "^3.6.2"
     },
     "dependencies": {
+        "@oauth-everything/oauth2-types": "^1.0.1",
+        "@oauth-everything/profile": "^1.0.0",
+        "@types/passport-oauth2": "^1.4.8",
         "passport-oauth2": "^1.5.0"
     }
 }
