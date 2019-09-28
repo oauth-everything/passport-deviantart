@@ -19,12 +19,11 @@ interface OptionsMixin {
     profileFields?: ExpandableField[];
 }
 
-interface TokenRequestResponse {
+export interface TokenResponse {
     expires_in: number;
     status: string;
     access_token: string;
     token_type: string;
-    refresh_token: string;
     scope: string;
 }
 
@@ -34,8 +33,8 @@ export type StrategyOptionsWithRequest = ExtendableStrategyOptionsWithRequest<Op
 export type VerifyCallback<TUser = object, TInfo = object> = OAuth2VerifyCallback<TUser, TInfo>;
 export type VerifyFunction<TUser, TInfo> = OAuth2VerifyFunction<Profile, TUser, TInfo>;
 export type VerifyFunctionWithRequest<TUser, TInfo> = OAuth2VerifyFunctionWithRequest<Profile, TUser, TInfo>;
-export type VerifyFunctionWithResults<TUser, TInfo> = OAuth2VerifyFunctionWithResults<TokenRequestResponse, Profile, TUser, TInfo>;
-export type VerifyFunctionWithRequestAndResults<TUser, TInfo> = OAuth2VerifyFunctionWithRequestAndResults<TokenRequestResponse, Profile, TUser, TInfo>;
+export type VerifyFunctionWithResults<TUser, TInfo> = OAuth2VerifyFunctionWithResults<TokenResponse, Profile, TUser, TInfo>;
+export type VerifyFunctionWithRequestAndResults<TUser, TInfo> = OAuth2VerifyFunctionWithRequestAndResults<TokenResponse, Profile, TUser, TInfo>;
 
 export class Strategy<TUser = object, TInfo = object> extends OAuth2Strategy {
 
